@@ -22,6 +22,8 @@ int main(){
 
     ptr_stud1 = &stud1;
 
+    printf("\n Digite sua matricula: ");
+    scanf("%d", &ptr_stud1->nMatricula);
 
 
     return 0;
