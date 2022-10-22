@@ -28,9 +28,16 @@ int main(){
     printf("\n Digite seu nome: ");
     scanf("%s", &ptr_stud1->nome);
     printf("\n Digite sua mensalidade: ");
-    scanf("%f", &ptr_stud1->nMatricula);
-    printf("\n Digite sua matricula: ");
-    scanf("%d", &ptr_stud1->nMatricula);
+    scanf("%f", &ptr_stud1->vMensalidade);
+    printf("\n Digite a data: ");
+    scanf("%s", &ptr_stud1->dataBacharel);
+
+    printf("\n ============= Cadastro do Estudante da UFRN ============== ");
+    printf("\n Numero matricula = %d", ptr_stud1->nMatricula);
+    printf("\n Nome do aluno = %s", ptr_stud1->nome);
+    printf("\n Mensalidade = %9.2f", ptr_stud1->vMensalidade);
+    printf("\n Data = %s", ptr_stud1->dataBacharel);
+
 
 
     return 0;
