@@ -9,10 +9,10 @@ int main(){
 
     struct cadastroUsuario
     {
-        char nome [20];
-        char cpf [20];
+        char nome [30];
+        char cpf [30];
         int idade;
-        char nascimento[20];
+        char nascimento[30];
 
 
     };
@@ -23,17 +23,25 @@ int main(){
 
     printf("\n ===================== Cadastro Usuario ======================== \n");
     printf("\n Digite o seu nome: ");
-    scanf("%s", &ptr_usuario->nome );
+    scanf("%s", &ptr_usuario->nome);
     printf("\n Digite seu cpf: ");
     scanf("%s", &ptr_usuario->cpf);
-    printF("\n Digite sua idade: ");
+    printf("\n Digite sua idade: ");
     scanf("%d", &ptr_usuario->idade);
-    printF("\n Digite sua data de nascimento: ");
+    printf("\n Digite sua data de nascimento: ");
     scanf("%s", &ptr_usuario->nascimento);
 
 
     printf("\n ===================== Seus dados ========================= \n");
     printf("\n ---------------------------------------------------------- \n");
+    printf("\n Nome do usuario: %s", ptr_usuario->nome);
+    printf("\n CPF do usuario: %s", ptr_usuario->cpf);
+    printf("\n Idade do usuario: %d", ptr_usuario->idade);
+    printf("\n Data de nascimento: %s", ptr_usuario->nascimento);
+    printf("\n ---------------------------------------------------------- \n");
+    printf("\n ========================================================== \n");
+    system("\n Pause");
+    system("cls");
 
     return 0;
 }
