@@ -35,3 +35,29 @@ float ler_nota(void)
     
     return n;
 }
+
+float calcula_media(float p1, float p2, float p3, float p4)
+{
+    float res;
+    res = (p1 + p2 + p3 + p4) / 4.0;
+    res = ((int) (res * 10)) / 10.0;
+    return res;
+}
+
+void exibe_resultado(float med)
+{
+    printf("Media: %.1f: ", med);
+    if (med < 3.0)
+        printf("Aluno reprovado\n");
+    else if (med > 3.0 && med < 5.0)
+        printf("Aluno em exame");
+    else if (med >= 5.0)
+        printf("Aluno aprovado\n");
+
+}
+
+void pausa()
+{
+    fflush(stdin);
+    getchar();
+}
